@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css?ver=1.02" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css?ver=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="10x16" />
+    <script
+      src="https://kit.fontawesome.com/17b5c44e80.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>HXYT</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-md wow fadeInDown"
+      data-wow-duration="1s"
+      data-wow-delay="0.20s"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo.png" alt="LOGO"
+        /></a>
+       
+         <div class="nav-btn-outer">
+              <a href="" data-toggle="modal" data-target="#wrappopup">Wrap</a>
+              <a href="">HOT! Stake</a>
+              <a href="">Money Crate</a>
+             <button id="connect-mm" class="btn-main">
+              <img src="images/icons/fox-icon.png" /><span>Connect to Metamask</span
+              >
+            </button>
+           </div>
+      </div>
+    </nav>
+    <!-- Header -->
+
+    <section
+      class="main-sec wow fadeInDown"
+      data-wow-duration="1s"
+      data-wow-delay="0.20s"
+    >
+      <div class="container">
+        <div class="my_crate">
+          <img src="images/mycrate.png" class="img_heading">
+          <div class="black-bx">
+            <div class="left_box">
+              <div>
+                <h3>Level <span id="mylevel2">-</span> </h3>
+                <h4 class="ml-4">Daily BTC Payout <span id="daily" class="pink">-</span></h4>
+              <h4 class="ml-4"> My total investment <span id="myinvestment"  class="pink">-</span>
+			  </div>
+            </div>
+
+            <div class="green-crate" id="mylevelimg"><img src="images/1.png"></div>
+            <div class="right_box">
+              <div>
+                <h3 class="BTC"><img src="images/btc.png">BTC Divs<span  id="withdrawable" class="pink">-</span></h3>
+                <button  onclick="withdraw()" id="wrap-it" class="btn-main">Withdraw</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div>
+        <img src="images/upgrade.png" class="img_heading">
+        <div class="row">
+          <div class="col-lg-4 d-flex">
+            <div class="black-bx">
+              <!-- <img src="images/flame.png" class="flames"> -->
+              <div class="blk-inr-head">
+                <h1>Daily Intrest Rate</h1>
+                <h3 id="myboost" class="grayed">-</h3>
+              </div>
+              <div class="blk-inr-head blk-time">
+                <div>
+                 
+                </div>
+                <img src="images/circle.png">
+              </div>
+              <div class="blk-inr-head blk-referral">
+                  <h1>My referral link</h1><div id="reflink">-</div>
+                  <button class="btn-main" onclick="copypromo()">Copy Link</button>
+                  <div class="info">
+                    <img src="images/info.png" />
+                    <div>My referal link gives 10% bonus buy to the referal and the referee.</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="black-bx next_upgrade">
+              <div class="blk-inr-head">
+                <div>
+                  <h1>Next upgrade</h1>
+                  <h3 id="nextupgrade" class="pink">-</h3>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="black-bx table_black">
+              <div class="blk-inr-cntnt">
+                <div class="table_head">
+                  <div>Level</div>
+                  <div class="pink">Upgrade Cost's</div>
+                  <div></div>
+                </div>
+                <div class="table_data">
+                  <div class="table_row">
+                    <div>LV1</div>
+                    <div class="pink">0.00010000</div>
+                    <div>0.51%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV2</div>
+                    <div class="pink">0.00025000</div>
+                    <div>0.52%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV3</div>
+                    <div class="pink">0.00050000</div>
+                    <div>0.53%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV4</div>
+                    <div class="pink">0.00100000</div>
+                    <div>0.54%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV5</div>
+                    <div class="pink">0.00250000</div>
+                    <div>0.56%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV6</div>
+                    <div class="pink">0.00500000</div>
+                    <div>0.58%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV7</div>
+                    <div class="pink">0.00750000</div>
+                    <div>0.6%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV8</div>
+                    <div class="pink">0.01000000</div>
+                    <div>0.63%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV9</div>
+                    <div class="pink">0.01250000</div>
+                    <div>0.65%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV10</div>
+                    <div class="pink">0.10000000</div>
+                    <div>0.68%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV11</div>
+                    <div class="pink">0.20000000</div>
+                    <div>0.7%</div>
+                  </div>
+                  <div class="table_row">
+                    <div>LV12</div>
+                    <div class="pink">0.36900000</div>
+                    <div>0.75%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex">
+            <div class="black-bx two-crates">
+              <div class="twocrates-bx">
+                  <div class="boxcol_outer">
+                    <div class="crate_imgouter" id="mylevelimg2">
+                      <img src="images/1.png">
+                    </div>
+                    <div>
+                      <h3>LV<span id="mylevel3">-</span></h3>
+                   
+                    </div>
+                  </div>
+                  <div class="boxcol_outer arrow_down">
+                    <div>
+                      <img src="images/arrow_down.png">
+                    </div>
+                    
+                  </div>
+                  <div class="boxcol_outer">
+                    <div id="nextupgradeimg" class="crate_imgouter">
+                      <img src="images/2.png" >
+                    </div>
+                    <div>
+                      <h3 class="pink">LV<span id="nextupgrade2">-</span></h3>
+                    
+                    </div>
+                  </div>
+
+                  <button class="btn-main"  onclick="upgrade()">Upgrade</button>
+                  <h3 class="BTC"><img src="images/btc.png">Cost BTC <span id="upgradecost" class="pink">0.00000</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+         <!--  <div class="row">
+            <div class="col-lg-4 d-flex">
+              <div class="black-bx">
+                <div class="btm-head">Staked Amount</div>
+                <div class="btm-head-det">203,999.84987 <span>HXYT</span></div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-flex">
+              <div class="black-bx">
+                <div class="btm-head">Estimated payout</div>
+                <div class="btm-head-det">203,999.84987 <span>HXYT</span></div>
+              </div>
+            </div>
+            <div class="col-lg-4 d-flex">
+              <div class="black-bx">
+                <div class="btm-head">My total earnings</div>
+                <div class="btm-head-det">203,999.84987 <span>HXYT</span></div>
+              </div>
+            </div>
+          </div> -->
+
+
+        
+      </div>
+    </section>
+    <!-- The Modal -->
+    <div id="approval" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="close-approval" class="close">&times;</span>
+        <div style="color: black">
+          <div>
+            <h2>HXY Approval</h2>
+            <p>
+              State: <span id="hxy-state">Pending</span
+              ><span id="hxy-trailing">...</span>
+            </p>
+          </div>
+          <hr />
+          <div>
+            <h2>HXB Approval</h2>
+            <p>
+              State: <span id="hxb-state">Pending</span
+              ><span id="hxb-trailing">...</span>
+            </p>
+          </div>
+          <hr />
+          <div>
+            <button
+              id="trigger-transfer"
+              class="btn-main"
+              style="max-width: 250px; display: block; margin: inherit"
+              disabled
+            >
+              WRAP IT
+            </button>
+            <!-- <p>State: Awaiting</p>
+            <p>
+              Tokens on receiver wallet: <span id="receiver-wallet">-</span>
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <footer></footer>
+        <!-- popup -->
+    <div class="modal" id="wrappopup">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="info-row info-row1">
+                <h4>HXY Approval</h4>
+                <div>State : Pending..</div>
+            </div>
+             <div class="info-row">
+                <h4>HXB Approval</h4>
+                <div>State : Pending..</div>
+            </div>
+            <a href="" class="btn-main">Wrap it</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/web3.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/owl.carousel.min.js"></script> -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+      //wow animation js
+      new WOW().init();
+	  
+	  
+	  
+	  
+var started=0;	
+				
+var contractAddress='TUC1TLARBA84rVBWqq3U4kPX6XB83C363s';
+var btcaddress='TQfnj54HDH5AFkEpW2ZJvhqkGkb9P7NUJ2';
+
+
+function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+				vars[key] = value;
+			});
+	return vars;
+}
+
+function round(num) {
+//return +(Math.floor(num + "e+8") + "e-8");	
+return num.toFixed(8);
+}
+		  
+		  
+
+
+
+  var myaddress;
+  var _refaddr='';
+ _refaddr = getUrlVars()["r"];
+ console.log('link '+_refaddr);
+if (_refaddr == undefined) _refaddr = '';
+
+	  
+if(_refaddr=='')_refaddr=contractAddress;	    
+console.log('Referral: '+_refaddr);
+
+
+ 
+   var mylevel;         
+
+var myboost = [];
+
+myboost[0]=0;
+myboost[1]=0.51;
+myboost[2]=0.52;
+myboost[3]=0.53;
+myboost[4]=0.54;
+myboost[5]=0.56;
+myboost[6]=0.58;
+myboost[7]=0.60;
+myboost[8]=0.63;
+myboost[9]=0.65;
+myboost[10]=0.68;
+myboost[11]=0.7;
+myboost[12]=0.75;
+
+    
+async function start() {
+started=1;
+  
+let MyContract = await tronWeb.contract().at(contractAddress);
+  
+document.getElementById("reflink").innerHTML="https://bull-of-tron.com/DummySite/?r="+myaddress;
+  
+
+		
+let res12=await MyContract.userInvestment(myaddress).call();
+document.getElementById("myinvestment").innerHTML=res12/100000000;
+  
+let res11=await MyContract.userLevel(myaddress).call();
+document.getElementById("myboost").innerHTML=myboost[res11]+"%";
+document.getElementById("mylevel2").innerHTML=res11;
+document.getElementById("mylevel3").innerHTML=res11;
+document.getElementById("mylevelimg").innerHTML="<img src='images/"+mylevel+".png' >";
+document.getElementById("mylevelimg2").innerHTML="<img src='images/"+mylevel+".png' >";
+
+mylevel=res11;
+if(mylevel<12){  
+document.getElementById("nextupgrade").innerHTML="Level "+(Number(mylevel)+1);
+document.getElementById("nextupgrade2").innerHTML=(Number(mylevel)+1);
+document.getElementById("nextupgradeimg").innerHTML="<img src='images/"+(Number(mylevel)+1)+".png' >";
+
+let res10=await MyContract.levelPrice(Number(mylevel)+1).call();
+console.log(res10);
+console.log(mylevel+1);
+document.getElementById("upgradecost").innerHTML=res10/100000000;
+} else {
+document.getElementById("nextupgrade").innerHTML="MAX";
+document.getElementById("upgradecost").innerHTML="MAX";
+document.getElementById("nextupgradeimg").innerHTML="<img src='images/"+mylevel+".png' >";
+document.getElementById("nextupgrade").innerHTML="Level "+mylevel;
+document.getElementById("nextupgrade2").innerHTML=mylevel;
+
+}
+ 
+let res9=await MyContract.withdrawable().call();
+document.getElementById("withdrawable").innerHTML=round(Number(res9/100000000));
+ 
+let res8=await MyContract.levelBonus(res11).call();
+document.getElementById("daily").innerHTML=round((res12/100000000)*(res8*86400/10000000000)/100); 
+
+
+
+}
+
+
+window.addEventListener("unhandledrejection", function (promiseRejectionEvent) {
+	start();
+});
+  
+async function upgrade() {
+	if(started>0){	
+console.log(_refaddr);	
+  let contractInstance = await tronWeb.contract().at(contractAddress);
+
+let res=await contractInstance.xbtcAllowance().call();
+if(res<1000000000){
+alert('Unlocking your Btc now');
+approve();
+}else{
+  
+	let args = {
+		callValue: 0,
+      	feeLimit: 100000000,
+		shouldPollResponse: true
+	};   
+let result = await contractInstance.upgrade(_refaddr).send(args);
+}
+      start();  
+} else alert ('Please unlock your tron wallet!');
+}
+
+ 
+async function withdraw() {
+	if(started>0){	
+ let contractInstance = await tronWeb.contract().at(contractAddress);	
+let args = {
+		callValue: 0,
+ 		feeLimit: 100000000,
+		shouldPollResponse: true
+	};   
+  let result = await contractInstance.withdraw().send(args);  
+      start();
+} else alert ('Please unlock your tron wallet!');
+}   
+   
+    function copypromo() {
+  var elm = document.getElementById("reflink");
+  // for Internet Explorer
+
+  if(document.body.createTextRange) {
+    var range = document.body.createTextRange();
+    range.moveToElementText(elm);
+    range.select();
+    document.execCommand("Copy");
+  }
+  else if(window.getSelection) {
+    // other browsers
+
+    var selection = window.getSelection();
+    var range = document.createRange();
+    range.selectNodeContents(elm);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand("Copy");
+  }
+}
+
+async function approve() {
+    try {
+
+        const options = {
+            feeLimit: 1000000000,
+            callValue: 0
+        };
+
+        const parameters = [{type: 'address', value: contractAddress}, {type: 'uint256', value: window.tronWeb.toHex(1000000000000000)}];
+        const issuerAddress = tronWeb.defaultAddress.base58;
+        const functionSelector = 'approve(address,uint256)';
+
+        let transactionObject = await tronWeb.transactionBuilder.triggerSmartContract (
+            btcaddress,
+            functionSelector,
+            options,
+            parameters,
+            tronWeb.address.toHex(issuerAddress)
+        );
+
+        if (!transactionObject.result || !transactionObject.result.result)
+            return console.error('Unknown error: ' + txJson, null, 2);
+
+        // Signing the transaction
+        const signedTransaction = await tronWeb.trx.sign(transactionObject.transaction);
+
+        if (!signedTransaction.signature) {
+            return console.error('Transaction was not signed properly');
+        }
+
+        // Broadcasting the transaction
+        const broadcast = await tronWeb.trx.sendRawTransaction(signedTransaction);
+       notch=250;
+	   alert('You can upgrade now');
+    } catch (e) {
+        return console.error(e);
+    }
+}
+    
+accountInterval2 = setInterval(function () {
+  if(myaddress==false&&tronWeb.defaultAddress.base58 != false) location.reload(); 
+    if(myaddress!=tronWeb.defaultAddress.base58){
+        myaddress = tronWeb.defaultAddress.base58;	
+} 
+	if (typeof window.tronWeb !== 'undefined'){		
+  if(tronWeb.defaultAddress.base58 != false){
+   start();
+}}
+}, 2000); 
+          
+	  
+	  
+    </script>
+  
+	
+  </body>
+</html>
